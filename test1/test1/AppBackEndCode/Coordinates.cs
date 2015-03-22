@@ -14,61 +14,57 @@ namespace test1
 	public class Coordinates
 	{
 		/**Variables that hold the coordinates**/
-		private int x, /**< The user's X-coordinate */
-					y, /**< The user's Y-coordinate */
-					z; /**< The user's Z-coordinate */
+		private double longitude, /**< The user's Longitude */
+					latitude; /**< The user's Latitude */
 
 		/** A constructor.
 		* @param x is the value that will set the internal X-coordinate
 		* @param y is the value that will set the internal Y-coordinate
 		* @param z is the value that will set the internal Z-coordinate
 		**/
-		Coordinates(int x, int y, int z){
-			setCoordinates (x, y, z);
+		Coordinates(double longitude, double latitude){
+			setCoordinates (longitude, latitude);
 		}
 
 		Coordinates(){
-			setCoordinates (0, 0, 0);
+			setCoordinates (0, 0);
+		}
+
+		static double[] getCurrentCoordinates(){
+
 		}
 
 		/**
 			Takes no arguments and returns all coordinates of the user.
 			@return The coordinates
 			*/
-		int[] getCoordinates(){
-			return new int[3]; //return x,y,z coordiates
+		double[] getCoordinates(){
+			return new double[2]; //return Longitude and Latitude coordiates
 		}
 
 		/**A function that sets the internal coordinates
-		 * @param x is the value that will set the internal X-coordinate
-		 * @param y is the value that will set the internal Y-coordinate
-		 * @param z is the value that will set the internal Z-coordinate
+		 * @param Longitude is the value that will set the instance's Longitude
+		 * @param Latitude is the value that will set the instance's Latitude
 		 * */
-		void setCoordinates(int x, int y, int z){
-			this->x = x;
-			this->y = y;
-			this->z = z;
+		void setCoordinates(double longitude, double latitude){
 		}
 
-		/**A function that returns the X-coordinate
+		void setCoordinates(double[] coordinates){
+			
+		}
+
+		/**A function that returns the Longitude
 		 * @return X-Coordinate
 		 * */
-		int getX(){
-			return x;
+		int getLong(){
+			return longitude;
 		}
 
 		/**A function that returns the Y-coordinate
 		 * @return Y-Coordinate
 		 * */
-		int getY(){
-			return y;
-		}
-
-		/**A function that returns the Z-coordinate
-		 * @return Z-Coordinate
-		 * */
-		int getZ(){
-			return z;
+		int getLat(){
+			return latitude;
 		}
 
 		/**A function that updates the inner coordinates using GPS
