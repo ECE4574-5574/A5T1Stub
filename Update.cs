@@ -5,55 +5,79 @@ namespace Update
 	class UpdateClass
 	{
 		/* By: Roudenniel Decastro
-		 * updates the list of rooms from the server
-		 * grabs information from the server and updates list 
-		 * on the app to be displayed
+		 * Sends list of current rooms added on the app to be stored
+		 * on the server
 		 * Parameters: none
-		 * Returns: none
+		 * Returns: boolean
 		 */
-		public void updateListOfRooms(){
+		public bool sendListOfRooms(){
+			return true;
+			
+		}
 		
-		}
-
 		/* By: Roudenniel Decastro
-		 * updates current location of user
-		 * associates the room with the location in order
-		 * for later learning algorithm
-		 * Parameters: room id
-		 * Returns: none
-		 */
-		public void updateLocation(string roomId){
-			
-		}
-
-		/* By: Roudenniel Decastro
-		 * updates the list of devices connected to the HUB
-		 * grabs information from the server and updates list 
-		 * on the app to be displayed
+		 * this returns the list of rooms from the server to be displayed
+		 * provides most current list for the app
 		 * Parameters: none
-		 * Returns: none
+		 * Returns: array: this is the list of rooms stored on the server
 		 */
-		public void updateListOfDevices(){
-			
+		public roomList[] receiveListOfRooms(){
+			roomList[] rooms;
+			return rooms;
 		}
 
 		/* By: Roudenniel Decastro
-		 * updates the list of devices on throughout the
-		 * entire house for the app
+		 * this sends the current location of the user to be stored on the server
+		 * Parameters: int x: this is the x position relative to the user within their house 
+		 	     : int y: this is the y position relative to the user within their house
+		 	     : int z: this is the z position relative to the user within their house
+		 * Returns: boolean
+		 */
+		public bool sendCurrentLocation(int x, int y, int z){
+			return true;	
+		}
+		
+		/* By: Roudenniel Decastro
+		 * this pulls the current location of the the user that is associated with roomId
 		 * Parameters: none
-		 * Returns: none
+		 * Returns: string: this is the roomId
 		 */
-		public void updateDevicesOn(){
-			
+		public string receiveCurrentLocation(){
+			int x, y, z;
+			Coordinates pos = new Coordinates();
+			x = pos.getX();
+			y = pos.getY();
+			z = pos.getZ();
+			string roomId;
+			return roomId;
+		}
+		
+		/* By: Roudenniel Decastro
+		 * this pulls what house the user is in from the server
+		 * Parameters: none
+		 * Returns: string: the name of the current house
+		 */
+		public string receiveCurrentHouse(){
+			return houseId;
 		}
 
 		/* By: Roudenniel Decastro
-		 * update the current room that the user is in
-		 * in order for the app to always have the most current information
-		 * Parameters: room Id
-		 * Returns: none
+		 * this pulls the device information from the server (on/off)
+		 * Parameters: none
+		 * Returns: array: this contains the list of devices that are on/off
 		 */
-		public void updateCurrentRoom(string roomId){
+		public deviceList[]  receiveDeviceSettings(){
+			deviceList[] devicesState;
+			return deviceState;
+		}
+		
+		/* By: Roudenniel Decastro
+		 * this sends the current devices settings(which are on/off) to the server
+		 * Parameters: none
+		 * Returns: boolean
+		 */
+		public bool sendDeviceSettings(){
+			return true;
 			
 		}
 
@@ -63,12 +87,22 @@ namespace Update
 		 */
 		public static void Main (string[] args)
 		{
+			int x,y,z;
+			devices[] device;
+			rooms[] room;
+			string roomId, houseId;
+			Coordinates pos = new Coordinates();
 			UpdateClass test = new UpdateClass();
-			test.updateListOfDevices ();
-			test.updateListOfRooms ();
-			test.updateDevicesOn ();
-			test.updateCurrentRoom ();
-			test.updateLocation ();
+			x = pos.getX();
+			y = pos.getY();
+			z = pos.getZ();
+			test.sendListOfRooms();
+			test.sendCurrentLocation(x,y,z);
+			test.sendDeviceSettings();
+			room = test.receiveListOfRooms();
+			device = test.receiveDeviceSettings();
+			roomId = test.receiveCurrentLocation();
+			houseId = test.receiveCurrentHouse();
 
 		}
 	}
