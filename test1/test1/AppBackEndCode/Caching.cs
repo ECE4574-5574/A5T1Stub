@@ -37,7 +37,7 @@ namespace test1
          * Passes the cached username and password to the applications
          * @return the username and password of the datatype user
          */
-        public user getCachedCredentials()
+        public User getCachedCredentials()
         {
         	return myUser;
         }
