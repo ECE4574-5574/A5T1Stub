@@ -71,18 +71,17 @@ namespace CachingSpace
             return deviceProperty;
         }
 	
-	/*
-     * Main function that performs unit testing on the methods above
-     */
-    public static void Main (string[] args)
-    {
-        UpdateClass test = new UpdateClass();
-        test.hashAndCacheCredentials ();
-        test.cacheUserPreference ();
-        test.getCachedUserPreference ();
-        test.cacheDeviceProperty ();
-        test.getCachedDeviceProperty ();
-    }
+        /*
+         * Main function that performs unit testing on the methods above
+         */public static void Main (string[] args)
+        {
+            UpdateClass test = new UpdateClass();
+            test.hashAndCacheCredentials ();
+            test.cacheUserPreference ();
+            test.getCachedUserPreference ();
+            test.cacheDeviceProperty ();
+            test.getCachedDeviceProperty ();
+        }
 
     }
 }
