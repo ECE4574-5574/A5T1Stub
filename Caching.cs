@@ -73,7 +73,8 @@ namespace CachingSpace
 	
         /*
          * Main function that performs unit testing on the methods above
-         */public static void Main (string[] args)
+         */
+        public static void Main (string[] args)
         {
             UpdateClass test = new UpdateClass();
             test.hashAndCacheCredentials ();
