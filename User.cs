@@ -14,7 +14,7 @@ namespace UserSpace
 	{
 		/**Variables that hold the user's information**/
 		private string username, /**< The username */
-					   password; /**< The user's password */
+			       password; /**< The user's password */
 		private string[] settings /**< The user's preferred system settings */
 					
 		/** A constructor.
