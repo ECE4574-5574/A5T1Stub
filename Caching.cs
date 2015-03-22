@@ -76,7 +76,7 @@ namespace CachingSpace
          */
         public static void Main (string[] args)
         {
-            UpdateClass test = new UpdateClass();
+            CachingSystem test = new CachingSystem();
             test.hashAndCacheCredentials ();
             test.cacheUserPreference ();
             test.getCachedUserPreference ();
