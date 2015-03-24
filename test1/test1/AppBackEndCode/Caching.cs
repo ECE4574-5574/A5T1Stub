@@ -39,7 +39,8 @@ namespace test1
          */
         public User getCachedCredentials()
         {
-        	return myUser;
+			User myUser = null;
+			return myUser;
         }
         
         /* By: Cole Padden
@@ -60,7 +61,7 @@ namespace test1
          */
         public string getCachedUserPreference(string uiElement)
         {
-            return elementProperty[];
+			return null;//elementProperty[];
         }
 
         /* By: Cole Padden
@@ -81,7 +82,7 @@ namespace test1
          */
         public string getCachedDeviceProperty(string deviceId)
         {
-            return deviceProperty[];
+			return null;//deviceProperty[];
         }
 	
         /* By: Cole Padden
@@ -100,9 +101,9 @@ namespace test1
          * @param houseId is the id of the device
          * @return a string array of the rooms
          */
-        public string getCachedDeviceProperty(string houseId)
+        public string getCachedHouseRoomList(string houseId)
         {
-            return rooms[];
+			return null;//rooms[];
         }	
 	
         /* By: Cole Padden
@@ -122,7 +123,7 @@ namespace test1
          */
         public string checkAuthToken(string authToken)
         {
-            return true;
+			return null;//true;
         }		
 	
         /*

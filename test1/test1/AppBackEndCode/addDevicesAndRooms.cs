@@ -119,7 +119,7 @@ namespace test1
         */
         public ArrayList addDevices(string houseName, string roomName, string[] deviceId)
         {
-            return failedDevices;
+			return null;//failedDevices;
         }
 
 

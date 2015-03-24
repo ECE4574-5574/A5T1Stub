@@ -21,11 +21,14 @@ namespace Update
 		 * Parameters: none
 		 * Returns: array: this is the list of rooms stored on the server
 		 */
-		public roomList[] receiveListOfRooms(){
-			roomList[] rooms;
-			return rooms;
+		//public roomList[] receiveListOfRooms(){
+		//	roomList[] rooms;
+		//	return rooms;
+		//}
+		public string[] receiveListOfRooms(){
+			string[] rooms;
+			return null;//rooms;
 		}
-
 		/* By: Roudenniel Decastro
 		 * this sends the current location of the user to be stored on the server
 		 * Parameters: int x: this is the x position relative to the user within their house 
@@ -43,13 +46,14 @@ namespace Update
 		 * Returns: string: this is the roomId
 		 */
 		public string receiveCurrentLocation(){
-			int x, y, z;
+			return null;
+			/*int x, y, z;
 			Coordinates pos = new Coordinates();
 			x = pos.getX();
 			y = pos.getY();
 			z = pos.getZ();
 			string roomId;
-			return roomId;
+			return roomId;*/
 		}
 		
 		/* By: Roudenniel Decastro
@@ -58,7 +62,7 @@ namespace Update
 		 * Returns: string: the name of the current house
 		 */
 		public string receiveCurrentHouse(){
-			return houseId;
+			return null;//houseId;
 		}
 
 		/* By: Roudenniel Decastro
@@ -66,9 +70,11 @@ namespace Update
 		 * Parameters: none
 		 * Returns: array: this contains the list of devices that are on/off
 		 */
-		public deviceList[]  receiveDeviceSettings(){
-			deviceList[] devicesState;
-			return deviceState;
+		//public deviceList[]  receiveDeviceSettings(){
+			//deviceList[] devicesState;
+		public string[]  receiveDeviceSettings(){
+			string[] deviceState;
+			return null;//deviceState;
 		}
 		
 		/* By: Roudenniel Decastro

@@ -9,8 +9,8 @@ namespace test1
 		 * Parameters: house ID, parameters to retrieve
 		 * Returns: string array
 		 */
-		public string[] retreiveHouseLayout(string houseID, string[] params){
-		
+		public string[] retreiveHouseLayout(string houseID, string[] queryParams){
+			return null;
 		}
 
 		/* By: Ekta Bindlish and Arun Thekumparampil
@@ -19,8 +19,8 @@ namespace test1
 		 * Parameters: parameters to retrieve
 		 * Returns: string array
 		 */
-		public string[] retreiveUserHistory(string [] params){
-
+		public string[] retreiveUserHistory(string [] queryParams){
+			return null;
 		}
 
 		/* By: Ekta Bindlish and Arun Thekumparampil
@@ -28,8 +28,8 @@ namespace test1
 		 * Parameters: house ID, parameters to retrieve
 		 * Returns: string array
 		 */
-		public string[] retreiveHouseHistory(string houseID, string [] params){
-
+		public string[] retreiveHouseHistory(string houseID, string [] queryParams){
+			return null;
 		}
 
 		/* By: Ekta Bindlish and Arun Thekumparampil
@@ -37,8 +37,8 @@ namespace test1
 		 * Parameters: house ID, room ID, parameters to retrieve
 		 * Returns: string array
 		 */
-		public string[] retreiveRoomHistory(string houseID, string roomID, string [] params){
-
+		public string[] retreiveRoomHistory(string houseID, string roomID, string [] queryParams){
+			return null;
 		}
 
 		/* By: Ekta Bindlish and Arun Thekumparampil
@@ -46,8 +46,8 @@ namespace test1
 		 * Parameters: house ID, room ID, device ID, parameters to retrieve
 		 * Returns: string array
 		 */
-		public string[] retreiveDeviceHistory(string houseID, string roomID, string deviceID, string[] params){
-
+		public string[] retreiveDeviceHistory(string houseID, string roomID, string deviceID, string[] queryParams){
+			return null;
 		}
 
 		/* By: Ekta Bindlish and Arun Thekumparampil
@@ -55,8 +55,8 @@ namespace test1
 		 * Parameters: string houseID, parameters to retreive
 		 * Returns: string array
 		 */
-		public string[] retreiveEventHistory(string houseID, string [] params){
-
+		public string[] retreiveEventHistory(string houseID, string [] queryParams){
+			return null;
 		}
 	}
 }

@@ -31,7 +31,7 @@ namespace test1
 		}
 
 		static double[] getCurrentCoordinates(){
-
+			return null;
 		}
 
 		/**
@@ -56,14 +56,14 @@ namespace test1
 		/**A function that returns the Longitude
 		 * @return X-Coordinate
 		 * */
-		int getLong(){
+		double getLong(){
 			return longitude;
 		}
 
 		/**A function that returns the Y-coordinate
 		 * @return Y-Coordinate
 		 * */
-		int getLat(){
+		double getLat(){
 			return latitude;
 		}
 

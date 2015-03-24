@@ -1,7 +1,7 @@
 /*! \file User.cs
  *  \brief A file containing the User Class -created by Brianna Kicia
  * */
-namespace UserSpace
+namespace test1
 {
 	/*! \class User
 	 *  \brief User 
