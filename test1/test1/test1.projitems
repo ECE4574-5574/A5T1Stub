@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{112F54C9-1BB1-4EE5-AE68-54BC69E68D3D}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>test1</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)test1.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AppBackEndCode\addDevicesAndRooms.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AppBackEndCode\Caching.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AppBackEndCode\Coordinates.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AppBackEndCode\Update.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AppBackEndCode\User.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AppBackEndCode\MakeQuery.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)AppBackEndCode\FunctionCalls.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)AppBackEndCode\" />
+  </ItemGroup>
+</Project>

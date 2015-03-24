@@ -1,0 +1,20 @@
+﻿<Properties StartupItem="Droid\test1.Droid.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SelectDevice" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="c:\Users\Divij\Documents\GitHub\A5T1Stub\test1\test1\AppBackEndCode\FunctionCalls.cs">
+    <Files>
+      <File FileName="test1\test1.cs" Line="29" Column="29" />
+      <File FileName="c:\Users\Divij\Documents\GitHub\A5T1Stub\test1\test1\AppBackEndCode\MakeQuery.cs" Line="2" Column="2" />
+      <File FileName="c:\Users\Divij\Documents\GitHub\A5T1Stub\test1\test1\AppBackEndCode\FunctionCalls.cs" Line="3" Column="3" />
+      <File FileName="c:\Users\Divij\Documents\GitHub\A5T1Stub\test1\test1\AppBackEndCode\Caching.cs" Line="16" Column="16" />
+      <File FileName="test1\AppBackEndCode\User.cs" Line="16" Column="16" />
+      <File FileName="c:\Users\Divij\Documents\GitHub\A5T1Stub\test1\test1\AppBackEndCode\Update.cs" Line="18" Column="18" />
+      <File FileName="c:\Users\Divij\Documents\GitHub\A5T1Stub\test1\test1\AppBackEndCode\addDevicesAndRooms.cs" Line="75" Column="75" />
+      <File FileName="c:\Users\Divij\Documents\GitHub\A5T1Stub\test1\test1\AppBackEndCode\Coordinates.cs" Line="6" Column="6" />
+      <File FileName="Droid\MainActivity.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
