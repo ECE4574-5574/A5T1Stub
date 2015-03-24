@@ -3,6 +3,7 @@ using System.IO;
 using System.Net;
 using Xamarin.Forms;
 using System.Runtime;
+using test1;
 //using System.Web;
 
 
@@ -105,7 +106,8 @@ namespace test1
 			return null;
 		}
 
-		public void LocationUpdate(){
+		public double[] LocationUpdate(){
+			return Coordinates.getCurrentCoordinates();
 
 		}
 
