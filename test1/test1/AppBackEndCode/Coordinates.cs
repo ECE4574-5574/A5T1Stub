@@ -30,6 +30,11 @@ namespace test1
 			setCoordinates (0, 0);
 		}
 
+		/**Retrieves the devices actual current coordinates, not the ones stored in this class.
+		 * This method accesses the phone's GPS and returns those coordinates, but does not update this classes
+		 * private members.
+		 * @return The current coordinates.
+		 * */
 		static double[] getCurrentCoordinates(){
 			return null;
 		}
