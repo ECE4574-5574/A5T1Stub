@@ -20,3 +20,5 @@ C:\Users\Divij\Documents\GitHub\A5T1Stub\test1\Droid\obj\Debug\res\drawable-xhdp
 C:\Users\Divij\Documents\GitHub\A5T1Stub\test1\Droid\obj\Debug\res\drawable-xxhdpi\icon.png
 C:\Users\Divij\Documents\GitHub\A5T1Stub\test1\Droid\obj\Debug\R.cs.flag
 C:\Users\Divij\Documents\GitHub\A5T1Stub\test1\Droid\obj\Debug\uploadflags.txt
+C:\Users\Arun\Desktop\A5T1Stub\test1\Droid\obj\Debug\test1.Droid.csprojResolveAssemblyReference.cache
+C:\Users\Arun\Desktop\A5T1Stub\test1\Droid\obj\Debug\test1.Droid.dll
