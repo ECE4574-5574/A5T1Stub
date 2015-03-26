@@ -15,19 +15,20 @@ namespace test1
 	{
 		/**Variables that hold the coordinates**/
 		private double longitude, /**< The user's Longitude */
-					latitude; /**< The user's Latitude */
+					latitude,  /**< The user's Latitude */
+					altitude;  /**< The user's Altitude */
 
 		/** A constructor.
 		* @param x is the value that will set the internal X-coordinate
 		* @param y is the value that will set the internal Y-coordinate
 		* @param z is the value that will set the internal Z-coordinate
 		**/
-		Coordinates(double longitude, double latitude){
-			setCoordinates (longitude, latitude);
+		Coordinates(double longitude, double latitude, double altitude){
+			setCoordinates (longitude, latitude, altitude);
 		}
 
 		Coordinates(){
-			setCoordinates (0, 0);
+			setCoordinates (0, 0, 0);
 		}
 
 		/**Retrieves the devices actual current coordinates, not the ones stored in this class.
@@ -44,14 +45,14 @@ namespace test1
 			@return The coordinates
 			*/
 		double[] getCoordinates(){
-			return new double[2]; //return Longitude and Latitude coordiates
+			return new double[3]; //return Longitude and Latitude coordiates
 		}
 
 		/**A function that sets the internal coordinates
 		 * @param Longitude is the value that will set the instance's Longitude
 		 * @param Latitude is the value that will set the instance's Latitude
 		 * */
-		void setCoordinates(double longitude, double latitude){
+		void setCoordinates(double longitude, double latitude, double altitude){
 		}
 
 		void setCoordinates(double[] coordinates){
@@ -70,6 +71,10 @@ namespace test1
 		 * */
 		double getLat(){
 			return latitude;
+		}
+
+		double getAlt(){
+			return altitude;
 		}
 
 		/**A function that updates the inner coordinates using GPS
