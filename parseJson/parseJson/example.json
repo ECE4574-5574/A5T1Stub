@@ -1,0 +1,23 @@
+﻿{
+    "storageLocation":"54.152.190.217",
+    "users": [
+        {
+            "user1": [
+                {
+                    "UserID": 12345
+                },
+                {
+                    "Password": "thePassword"
+                }
+            ],
+            "user2": [
+                {
+                    "UserID": 67890
+                },
+                {
+                    "Password": "secondPassword"
+                }
+            ]
+        }
+    ]
+}
