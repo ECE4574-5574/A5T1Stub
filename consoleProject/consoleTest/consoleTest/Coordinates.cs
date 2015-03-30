@@ -45,7 +45,8 @@ namespace consoleTest
 			@return The coordinates
 			*/
 		double[] getCoordinates(){
-			return new double[3]; //return Longitude and Latitude coordiates
+			double[] xyz = { longitude, latitude, altitude };
+			return xyz; //return Longitude and Latitude coordiates
 		}
 
 		/**A function that sets the internal coordinates
