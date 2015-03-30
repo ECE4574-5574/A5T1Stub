@@ -104,10 +104,8 @@ namespace consoleTest
 
 		}
 		
-<<<<<<< HEAD
-=======
-		
-		public double[] generateRandomCoordinates ()	{
+		//added by Brianna
+		public static double[] generateRandomCoordinates ()	{
 
 			double[] currentCoordinates = Coordinates.getCurrentCoordinates ();
 			double[] randomCoordinates = new double[3];
@@ -132,7 +130,6 @@ namespace consoleTest
 			randomCoordinates [2] = currentCoordinates[2];
 			return randomCoordinates;
 		}
->>>>>>> origin/httpRequests
 
 		//added by Souwarna
 		//modified by Luke
@@ -173,9 +170,8 @@ namespace consoleTest
 			response.Close ();
 			return null;
 		}
-<<<<<<< HEAD
-		
-		//added by ekta
+
+		//added by Suwarna
 		public static string GET_Request(string url)
 		{
 			// Create a request using a URL that can receive a post. 
@@ -210,7 +206,3 @@ namespace consoleTest
 
 	}	
 }
-=======
-	}
-}
->>>>>>> origin/httpRequests

@@ -3,3 +3,5 @@ C:\Users\Divij\Documents\GitHub\A5T1Stub\consoleProject\consoleTest\consoleTest\
 C:\Users\Divij\Documents\GitHub\A5T1Stub\consoleProject\consoleTest\consoleTest\obj\x86\Debug\consoleTest.exe
 C:\Users\Divij\Documents\GitHub\A5T1Stub\consoleProject\consoleTest\consoleTest\obj\x86\Debug\consoleTest.pdb
 C:\Users\Divij\Documents\GitHub\A5T1Stub\consoleProject\consoleTest\consoleTest\obj\x86\Debug\consoleTest.csprojResolveAssemblyReference.cache
+C:\Users\Divij\Documents\GitHub\A5T1Stub\consoleProject\consoleTest\consoleTest\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Divij\Documents\GitHub\A5T1Stub\consoleProject\consoleTest\consoleTest\bin\Debug\Newtonsoft.Json.xml
