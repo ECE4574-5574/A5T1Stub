@@ -109,6 +109,33 @@ namespace consoleTest
 			return Coordinates.getCurrentCoordinates();
 
 		}
+		
+		
+		public double[] generateRandomCoordinates ()	{
+
+			double[] currentCoordinates = Coordinates.getCurrentCoordinates ();
+			double[] randomCoordinates = new double[3];
+
+			Random rnd = new Random ();
+
+			randomCoordinates [0] = rnd.NextDouble ();
+			randomCoordinates [1] = rnd.NextDouble ();
+			double plusMinus0 = rnd.NextDouble ();
+			double plusMinus1 = rnd.NextDouble ();
+
+			if (plusMinus0 > 0.5)
+				randomCoordinates [0] = currentCoordinates[0] + Math.Round(randomCoordinates [0] / 1500, 6);
+			else
+				randomCoordinates [0] = currentCoordinates[0] - Math.Round(randomCoordinates [0] / 1500, 6);
+
+			if (plusMinus1 > 0.5)
+				randomCoordinates [1] = currentCoordinates[1] + Math.Round(randomCoordinates [1] / 1500, 6);
+			else
+				randomCoordinates [1] = currentCoordinates[1] - Math.Round(randomCoordinates [1] / 1500, 6);
+
+			randomCoordinates [2] = currentCoordinates[2];
+			return randomCoordinates;
+		}
 
 		public static string POST_Request(string url, string data)
 		{
