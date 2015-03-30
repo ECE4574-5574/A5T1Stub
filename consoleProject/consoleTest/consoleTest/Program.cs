@@ -7,7 +7,7 @@ namespace consoleTest
 		public static void Main (string[] args)
 		{
 			//Console.WriteLine ("Hello World!");
-			FunctionCallHierarchy.POST_Coordinates("0010");
+			FunctionCallHierarchy.POST_Request("http://localhost:49310/api/events/locationchange/0010", "check");
 		}
 	}
 }
