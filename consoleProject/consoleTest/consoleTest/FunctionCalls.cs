@@ -17,15 +17,9 @@ namespace consoleTest
 		 * this basically encapsulates other functions
 		 */
 
-		/*public bool instaiateUser(string username, string password){
-			string url = "http://testHomeApi.com/JSON?instantiateUser=" + username +
-			             "&password=" + password;
-
-			JsonValue json = await instaiateUserAsync (url);
-
+		public bool instaiateUser(string username, string password){
 			return false;
-		
-		}*/
+		}
 
 		public bool AuthenticateUser( string username, string password){
 			return false;
@@ -109,7 +103,10 @@ namespace consoleTest
 			return Coordinates.getCurrentCoordinates();
 
 		}
+		
 
+		//added by Souwarna
+		//modified by Luke
 		public static string POST_Request(string url, string data)
 		{
 			// Create a request using a URL that can receive a post. 
@@ -147,5 +144,39 @@ namespace consoleTest
 			response.Close ();
 			return null;
 		}
-	}
+		
+		//added by ekta
+		public static string GET_Request(string url)
+		{
+			// Create a request using a URL that can receive a post. 
+			WebRequest request = WebRequest.Create(url);
+			request.Method = "GET";
+			WebResponse response = request.GetResponse();
+			// Display the status.
+			Console.WriteLine (((HttpWebResponse)response).StatusDescription); // gives the status
+			// Get the stream containing content returned by the server.
+			Stream dataStream = response.GetResponseStream ();
+			// Open the stream using a StreamReader for easy access.
+			StreamReader reader = new StreamReader (dataStream);
+			// Read the content.
+			string responseFromServer = reader.ReadToEnd ();
+			// Display the content.
+			Console.WriteLine (responseFromServer);
+			// Clean up the streams and the response.
+			reader.Close ();
+			response.Close ();
+			return null;
+		}
+		
+		//added by ekta
+		public static string DELETE_Request(string url)
+		{
+			WebRequest request = WebRequest.Create(url);
+			request.Method = "DELETE";
+			HttpWebResponse response = (HttpWebResponse)request.GetResponse();
+			Console.WriteLine (((HttpWebResponse)response).StatusDescription); // gives the status
+			return null;
+		}
+
+	}	
 }
