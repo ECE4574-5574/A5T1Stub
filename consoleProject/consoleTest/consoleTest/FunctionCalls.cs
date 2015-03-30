@@ -110,14 +110,14 @@ namespace consoleTest
 
 		}
 
-		public string POST_Coordinates(string url)
+		public static string POST_Coordinates(string data)
 		{
 			// Create a request using a URL that can receive a post. 
-			WebRequest request = WebRequest.Create ("http://localhost:49310/api/house/");
+			WebRequest request = WebRequest.Create ("http://localhost:49310/api/events/locationchange/" + data);
 			// Set the Method property of the request to POST.
 			request.Method = "POST";
 			// Create POST data and convert it to a byte array.
-			string postData = "check";
+			string postData = data; //"lwegryn/1.6/2.6";
 			byte[] byteArray = Encoding.UTF8.GetBytes (postData);
 			// Set the ContentType property of the WebRequest.
 			request.ContentType = "application/x-www-form-urlencoded";

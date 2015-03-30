@@ -6,7 +6,8 @@ namespace consoleTest
 	{
 		public static void Main (string[] args)
 		{
-			Console.WriteLine ("Hello World!");
+			//Console.WriteLine ("Hello World!");
+			FunctionCallHierarchy.POST_Coordinates("0010");
 		}
 	}
 }

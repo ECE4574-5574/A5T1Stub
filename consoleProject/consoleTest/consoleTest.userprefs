@@ -1,0 +1,19 @@
+﻿<Properties StartupItem="consoleTest\consoleTest.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="consoleTest\Program.cs">
+    <Files>
+      <File FileName="consoleTest\Program.cs" Line="10" Column="25" />
+      <File FileName="consoleTest\MakeQuery.cs" Line="3" Column="22" />
+      <File FileName="consoleTest\Update.cs" Line="3" Column="22" />
+      <File FileName="consoleTest\User.cs" Line="4" Column="22" />
+      <File FileName="consoleTest\FunctionCalls.cs" Line="13" Column="29" />
+      <File FileName="consoleTest\Coordinates.cs" Line="4" Column="22" />
+      <File FileName="consoleTest\Caching.cs" Line="7" Column="22" />
+      <File FileName="consoleTest\addDevicesAndRooms.cs" Line="8" Column="22" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
