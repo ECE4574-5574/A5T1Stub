@@ -1,13 +1,13 @@
 ﻿using System;
+using System.Text;
 using System.IO;
 using System.Net;
 using Xamarin.Forms;
 using System.Runtime;
 using test1;
-//using System.Web;
 
 
-using Newtonsoft.Json;
+//using Newtonsoft.Json;
 
 namespace test1
 {
@@ -18,7 +18,7 @@ namespace test1
 		 * this basically encapsulates other functions
 		 */
 
-		public bool instaiateUser(string username, string password){
+		/*public bool instaiateUser(string username, string password){
 			string url = "http://testHomeApi.com/JSON?instantiateUser=" + username +
 			             "&password=" + password;
 
@@ -26,7 +26,7 @@ namespace test1
 
 			return false;
 		
-		}
+		}*/
 
 		public bool AuthenticateUser( string username, string password){
 			return false;
@@ -111,29 +111,41 @@ namespace test1
 
 		}
 
-		private async Task<JsonValue> instaiateUserAsync (string url)
+		public void jsonPOST(string url)
 		{
-			// Create an HTTP web request using the URL:
-			HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create (new Uri (url));
-			request.ContentType = "application/json";
-			request.Method = "GET";
-
-			// Send the request to the server and wait for the response:
-			using (WebResponse response = await request.GetResponseAsync ())
-			{
-				// Get a stream representation of the HTTP web response:
-				using (Stream stream = response.GetResponseStream ())
-				{
-					// Use this stream to build a JSON document object:
-					JsonValue jsonDoc = await Task.Run (() => JsonObject.Load (stream));
-					Console.Out.WriteLine("Response: {0}", jsonDoc.ToString ());
-
-					// Return the JSON document:
-					return jsonDoc;
-				}
-			}
+			// Create a request using a URL that can receive a post. 
+			WebRequest request = WebRequest.Create ("http://localhost:49310/api/house/12");
+			// Set the Method property of the request to POST.
+			request.Method = "POST";
+			// Create POST data and convert it to a byte array.
+			string postData = "check";
+			byte[] byteArray = Encoding.UTF8.GetBytes (postData);
+			// Set the ContentType property of the WebRequest.
+			request.ContentType = "application/x-www-form-urlencoded";
+			// Set the ContentLength property of the WebRequest.
+			request.ContentLength = byteArray.Length;
+			// Get the request stream.
+			Stream dataStream = request.GetRequestStream ();
+			// Write the data to the request stream.
+			dataStream.Write (byteArray, 0, byteArray.Length);
+			// Close the Stream object.
+			dataStream.Close ();
+			// Get the response.
+			WebResponse response = request.GetResponse ();
+			// Display the status.
+			Console.WriteLine (((HttpWebResponse)response).StatusDescription);
+			// Get the stream containing content returned by the server.
+			dataStream = response.GetResponseStream ();
+			// Open the stream using a StreamReader for easy access.
+			StreamReader reader = new StreamReader (dataStream);
+			// Read the content.
+			string responseFromServer = reader.ReadToEnd ();
+			// Display the content.
+			Console.WriteLine (responseFromServer);
+			// Clean up the streams.
+			reader.Close ();
+			dataStream.Close ();
+			response.Close ();
 		}
-
 	}
-
 }
