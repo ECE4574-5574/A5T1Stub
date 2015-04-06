@@ -56,11 +56,11 @@ namespace consoleTest
 			//API calls added by Luke, Ekta and Arun
 
 			//DeviceMgr
-			FunctionCallHierarchy.GET_Request("http://5574serverapi.azurewebsites.net/api/devicemgr/state/12");
-			Console.WriteLine ();
+			/*FunctionCallHierarchy.GET_Request("http://5574serverapi.azurewebsites.net/api/devicemgr/state/12");
+			Console.WriteLine ();*/
 
-			FunctionCallHierarchy.POST_Request("http://5574serverapi.azurewebsites.net//api/devicemgr/state/12", "check");
-			Console.WriteLine ();
+			/*FunctionCallHierarchy.POST_Request("http://5574serverapi.azurewebsites.net//api/devicemgr/state/12", "check");
+			Console.WriteLine ();*/
 
 			//SIM
 			//FunctionCallHierarchy.GET_Request("http://5574serverapi.azurewebsites.net/api/api/sim/configuration/12");
@@ -100,7 +100,7 @@ namespace consoleTest
 			FunctionCallHierarchy.DELETE_Request("http://5574serverapi.azurewebsites.net/api/device/12/15/17");
 			Console.WriteLine ();*/
 
-			//House
+			/*//House
 			FunctionCallHierarchy.GET_Request("http://5574serverapi.azurewebsites.net/api/house/12");
 			Console.WriteLine ();
 			FunctionCallHierarchy.POST_Request("http://5574serverapi.azurewebsites.net/api/house/12","check");
@@ -109,7 +109,7 @@ namespace consoleTest
 			Console.WriteLine ();*/
 										
 			//Events
-			FunctionCallHierarchy.POST_Request("http://5574serverapi.azurewebsites.net/api/events/weather","check");
+			/*FunctionCallHierarchy.POST_Request("http://5574serverapi.azurewebsites.net/api/events/weather","check");
 			Console.WriteLine ();
 			FunctionCallHierarchy.POST_Request("http://5574serverapi.azurewebsites.net/api/events/devicestate","check");
 			Console.WriteLine ();
@@ -118,8 +118,16 @@ namespace consoleTest
 			FunctionCallHierarchy.POST_Request("http://5574serverapi.azurewebsites.net/api/events/locationchange/0010","check");
 			Console.WriteLine ();
 			FunctionCallHierarchy.POST_Request("http://5574serverapi.azurewebsites.net/api/events/locatltime","check");
-			Console.WriteLine ();
+			Console.WriteLine ();*/
 
+			double lat = 90.8576;
+			double longi = 48.5473;
+			double alt = 30.6758;
+			double timeVal = 30.45;
+			string jsonObject = "latitude" + ":" + lat + "," + "longitude" + ":" + longi + "," + "altitude" + ":" + alt + "," + "locationTimeStamp" + ":" + timeVal;
+	
+			FunctionCallHierarchy.POST_Request ("http://5574serverapi.azurewebsites.net/api/user/updateposition/0010", jsonObject);
+			Console.WriteLine ();
 			Console.WriteLine("Press any key to continue...");
 			Console.ReadLine();
 		}

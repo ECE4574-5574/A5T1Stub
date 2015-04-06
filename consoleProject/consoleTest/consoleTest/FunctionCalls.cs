@@ -133,14 +133,14 @@ namespace consoleTest
 
 		//added by Souwarna
 		//modified by Luke
-		public static string POST_Request(string url, string data)
+		public static string POST_Request(string url, string jsonData)
 		{
 			// Create a request using a URL that can receive a post. 
 			WebRequest request = WebRequest.Create(url);
 			// Set the Method property of the request to POST.
 			request.Method = "POST";
 			// Create POST data and convert it to a byte array.
-			string postData = data;
+			string postData = jsonData;
 			byte[] byteArray = Encoding.UTF8.GetBytes (postData);
 			// Set the ContentType property of the WebRequest.
 			request.ContentType = "application/x-www-form-urlencoded";
